@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_link_extra_links",
+  "info": {
+    "displayName": "Extra Link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "docByRegulation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link-reg",
+      "required": true
+    }
+  }
+}

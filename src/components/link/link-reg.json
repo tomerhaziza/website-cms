@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_link_link_regs",
+  "info": {
+    "displayName": "LinkReg",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "regulation": {
+      "type": "enumeration",
+      "enum": [
+        "ALL",
+        "INTERNATIONAL",
+        "BULGARIA",
+        "EUROPE",
+        "INTERNATIONAL_SEYCHELLES"
+      ],
+      "required": true,
+      "default": "ALL"
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

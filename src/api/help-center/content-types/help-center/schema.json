@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "help_centers",
+  "info": {
+    "singularName": "help-center",
+    "pluralName": "help-centers",
+    "displayName": "Help Center",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "helpCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::help-category.help-category"
+    }
+  }
+}

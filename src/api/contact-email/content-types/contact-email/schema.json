@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_emails",
+  "info": {
+    "singularName": "contact-email",
+    "pluralName": "contact-emails",
+    "displayName": "Contact Email",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        },
+        "translate": {
+          "translate": "translate"
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "email",
+      "required": true
+    },
+    "rank": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
+    },
+    "regulation": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "ALL",
+        "INTERNATIONAL",
+        "BULGARIA",
+        "EUROPE"
+      ],
+      "default": "ALL",
+      "required": true
+    },
+    "brand": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "xtrade",
+        "eightinvest",
+        "all",
+        "eightInvest"
+      ],
+      "default": "eightInvest"
+    }
+  }
+}

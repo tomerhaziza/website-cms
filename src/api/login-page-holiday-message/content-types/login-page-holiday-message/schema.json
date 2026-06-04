@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "login_page_holiday_messages",
+  "info": {
+    "singularName": "login-page-holiday-message",
+    "pluralName": "login-page-holiday-messages",
+    "displayName": "Login page holiday message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "xtrade",
+        "eightinvest"
+      ],
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    },
+    "message": {
+      "type": "text"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": true,
+      "component": "holiday-message-row-item.holiday-message-table-row"
+    }
+  }
+}

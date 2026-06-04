@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossary_items",
+  "info": {
+    "singularName": "glossary-item",
+    "pluralName": "glossary-items",
+    "displayName": "Glossary Items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "all",
+        "xtrade",
+        "eightinvest"
+      ],
+      "default": "all"
+    }
+  }
+}

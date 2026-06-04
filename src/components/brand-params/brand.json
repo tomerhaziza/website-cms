@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_brand_params_brands",
+  "info": {
+    "displayName": "brandParam",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "INTERNATIONAL": {
+      "type": "string"
+    },
+    "BULGARIA": {
+      "type": "string"
+    }
+  }
+}

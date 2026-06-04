@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_holiday_message_row_item_holiday_message_table_rows",
+  "info": {
+    "displayName": "Holiday message table row",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HolidayMessageRow": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

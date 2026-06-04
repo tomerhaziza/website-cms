@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_param_params",
+  "info": {
+    "displayName": "Param"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
