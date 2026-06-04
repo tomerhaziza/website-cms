@@ -7,6 +7,21 @@ module.exports = ({ env }) => ({
   translate: {
     enabled: true,
     config: {
+      // Choose google as the provider
+      provider: "google-cloud",
+      // Pass credentials and other options to the provider
+      providerOptions: {
+        // Your API key - required and wil cause errors if not provided
+        apiKey: env("STRAPI_GOOGLE_TRANSLATE_API_TOKEN"),
+        // Your project id - required and wil cause errors if not provided
+        projectId: env("GOOGLE_PROJECT_ID"),
+        googleJson: env("GOOGLE_TRANSLATE_JSON"),
+        // Use custom locale mapping (for example to translate from your default locale to en-US)
+        // localeMap: {
+        //   // Use uppercase here!
+        //   EN: "EN-US",
+        // },
+      },
       // Which field types are translated (default string, text, richtext, components and dynamiczones)
       // Either string or object with type and format
       // Possible formats: plain, markdown, html (default plain)
@@ -63,7 +78,7 @@ module.exports = ({ env }) => ({
               type: "help-article",
               locale: "{locale}",
             },
-            copy: true,
+            copy: false,
             alwaysVisible: true,
           },
         },
